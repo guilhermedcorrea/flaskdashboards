@@ -18,8 +18,6 @@ from flask_admin.menu import MenuLink
 from ..models.models import Enderecos, Estados, Municipios
 
 
-
-
 Admin_ = Blueprint('adm', __name__)
 
 #current_app.config["UPLOAD_FOLDER"] = 
