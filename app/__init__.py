@@ -4,7 +4,6 @@ from flask_migrate import Migrate
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
 URI = os.getenv('URI')
 KEY = os.getenv('SECRET_KEY')
@@ -27,7 +26,6 @@ def create_app():
         celery = make_celery(flask_app)
     
     '''
-
     db.init_app(app)
 
     migrate.init_app(app, db)
